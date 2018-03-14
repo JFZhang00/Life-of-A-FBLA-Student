@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{212C56D4-4849-FABD-0FA8-7E6D70D890A6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraController.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="17" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
