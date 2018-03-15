@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    private PlayerController player;
+
+    public void Start()
+    {
+        player = FindObjectOfType<PlayerController>();
+    }
 
     public void PlayGame(){
         Debug.Log("Hello World");
-        SceneManager.LoadScene("Neighborhood");
+        SceneManager.LoadScene("Map");
+        player.startPoint = "HomeExit";
 
     }
 

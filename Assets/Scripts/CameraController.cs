@@ -13,11 +13,19 @@ public class CameraController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-      
+        if (!cameraExists && gameObject.name.Equals("Camera"))
+        {
+            cameraExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         targetPos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z); //Assign position of target (the GameObject) to targetPos
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime); //Moves from point A to point B with a speed. Lerp(Vector3 A, Vector3 B, Float Speed)
